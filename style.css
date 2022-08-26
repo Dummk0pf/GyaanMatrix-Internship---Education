@@ -1,0 +1,104 @@
+/* font-family: 'IBM Plex Serif', serif;
+font-family: 'Lora', serif;
+font-family: 'PT Mono', monospace; */
+
+html{
+    background-color: whitesmoke;
+    height:100%;
+}
+
+body{
+    height:100%;
+}
+
+h1{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+p{
+    font-family: 'PT Mono', monospace;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'PT Mono', monospace;
+    color:black;
+}
+
+header{
+    display: flex;
+}
+
+    .logo img{
+        width:10rem;
+        margin:1rem;
+        border-radius:1rem;
+        box-shadow: 0rem 0rem 0.5rem grey;
+    }
+
+    nav{
+        width:100%;
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    .nbut1,.nbut2,.nbut3{
+        width:fit-content;
+        height: fit-content;
+        margin:2rem 0.5rem;
+        padding:1rem;
+        border-radius:0.5rem;
+    }
+
+    .nbut1:hover,.nbut2:hover,.nbut3:hover{
+        animation: fade-in 0.3s ease-in-out forwards;
+    }
+
+    @keyframes fade-in{
+        from{
+            box-shadow: 0rem 0rem 0.01rem grey;
+        }
+        to{
+            box-shadow: 0rem 0rem 0.5rem grey;
+        }
+    }
+
+    .search input[type="search"]{
+        width:24rem;    
+        padding:0.8rem;
+        margin:2.2rem 1rem;
+        border:0.1rem white solid;
+        border-radius:1rem;
+    }
+
+    .star{
+        margin-left:3rem;
+    }
+
+    nav img{
+        width:1.5rem;
+        margin:2.5rem 1.8rem;
+        margin-top:2.5rem;
+        padding:0.7rem;
+        border:0.1rem white dashed;
+        border-radius:1rem;
+    }
+
+    .star,.book,.acc{
+    }
+
+
+
+
+.container{
+    height:80%;
+    background-color: lightcyan;
+}
+
+
+
+
+footer{
+    height:40%;
+    background-color:lightskyblue;
+}

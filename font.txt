@@ -1,0 +1,7 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&family=Lora:ital@0;1&family=PT+Mono&display=swap" rel="stylesheet">
+
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Lora', serif;
+font-family: 'PT Mono', monospace;
