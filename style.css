@@ -26,20 +26,20 @@ a{
 }
 
 header{
-    height:7rem;
+    height:5rem;
     display: flex;
     background-color: white;
 }
 
     .logo img{
-        width:10rem;
-        margin:1rem;
+        width:8rem;
+        margin:0.7rem 0.5rem 0rem 1rem;
         border-radius:1rem;
-        box-shadow: 0rem 0rem 0.5rem grey;
+        border:0.05rem rgba(119, 136, 153, 0.456) solid;
     }
 
     nav{
-        width:100%;
+        width:90%;
         display:flex;
         justify-content: space-evenly;
     }
@@ -47,28 +47,31 @@ header{
     .nbut1,.nbut2,.nbut3{
         width:fit-content;
         height: fit-content;
-        margin:2rem 0.5rem;
+        margin:1rem 0rem;
         padding:1rem;
         border-radius:0.5rem;
+        /* font-weight: 600; check this to see if it works out after finishing the project*/
     }
 
-    .nbut1:hover,.nbut2:hover,.nbut3:hover{
+    .logo img:hover,.nbut1:hover,.nbut2:hover,.nbut3:hover{
         animation: box-in 0.3s ease-in-out forwards;
     }
 
     @keyframes box-in{
         from{
+            text-decoration: none;
             box-shadow: 0rem 0rem 0.01rem grey;
         }
         to{
-            box-shadow: 0rem 0rem 0.5rem grey;
+            text-decoration: overline;
+            box-shadow: 0rem 0rem 0.4rem grey;
         }
     }
 
     .search input[type="search"]{
         width:24rem;    
         padding:0.8rem;
-        margin:2.2rem 1rem;
+        margin:1.2rem 1rem 0rem 0rem;
         background-image:url("images/search.gif");
         background-position: 21.5rem;
         background-repeat: no-repeat;
@@ -80,7 +83,7 @@ header{
     nav img{
         position:relative;
         width:1.5rem;
-        margin:3rem 0rem;
+        margin:1.8rem 0.2rem;
         filter:invert(0.4);
     }
 
@@ -94,9 +97,8 @@ header{
         display: none;
         font-size: 0.9rem;
         width:fit-content;
-        text-align:center;
         position:absolute;
-        top:5.5rem;
+        top:4.5rem;
         right:2rem;
         padding:1rem;
         background-color:white;
@@ -105,19 +107,29 @@ header{
 
     .wiis a{
         display: block;
-        margin-top:0.5rem;
-        color:blue;
+        width:fit-content;
+        margin:0.6rem 0rem 0rem 6.5rem;
+        padding:0.5rem;
+        background-color:black;
+        color:white;
+        border:0.05rem white solid;
     }
 
     
     .star:hover .wiis{
         display: block;
-        animation:fade-in 0.7s forwards ease-in; 
+        animation:fade-in 0.2s forwards ease-out; 
     }
 
     @keyframes fade-in{
-        from {  opacity:0; }
-        to   { opacity: 1; }
+        from {  
+            opacity:0;
+            transform: scale(0.95); 
+        }
+        to { 
+            opacity: 1;
+            transform:scale(1);
+        }
     }
 
 .container{
