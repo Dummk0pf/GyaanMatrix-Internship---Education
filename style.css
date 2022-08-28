@@ -22,13 +22,13 @@ p{
 a{
     text-decoration: none;
     font-family: 'PT Mono', monospace;
-    color:black;
+    color:white;
 }
 
 header{
     height:5rem;
     display: flex;
-    background-color: white;
+    background-color: black;
 }
 
     .logo img{
@@ -54,17 +54,15 @@ header{
     }
 
     .logo img:hover,.nbut1:hover,.nbut2:hover,.nbut3:hover{
-        animation: box-in 0.3s ease-in-out forwards;
+        animation: box-in 0.5s ease-in-out forwards;
     }
 
     @keyframes box-in{
         from{
-            text-decoration: none;
-            box-shadow: 0rem 0rem 0.01rem grey;
+            box-shadow: 0rem 0rem 0.01rem rgb(224, 224, 224);
         }
         to{
-            text-decoration: overline;
-            box-shadow: 0rem 0rem 0.4rem grey;
+            box-shadow: 0rem 0rem 0.5rem rgb(224, 224, 224);
         }
     }
 
@@ -72,24 +70,20 @@ header{
         width:30vw;    
         padding:0.8rem;
         margin:1.2rem 1rem 0rem 0rem;
-        background-image:url("images/search.gif");
-        background-position: 27vw;
-        background-repeat: no-repeat;
-        background-size: 2vw;
         border:0.1rem black solid;
         border-radius:1.5rem;
+        filter:invert(1);
     }
 
     nav img{
         position:relative;
         width:1.5rem;
         margin:1.8rem 0.2rem;
-        filter:invert(0.4);
+        filter:invert(0.8);
     }
 
     nav img:hover{
         transition-duration:1s;
-        filter:invert(0);
         scale:1.1;
     }
 
@@ -148,6 +142,21 @@ header{
     height:80%;
     background-color: lightcyan;
 }
+
+    .herobox1{
+        width:100%;
+        background-color: blanchedalmond;
+    }
+
+    .hdn{
+        width:fit-content;
+        font-size:3rem;
+        font-weight:500;
+        padding:1rem;
+        background-color: rgb(18, 69, 52);
+    }
+
+
 
 
 
