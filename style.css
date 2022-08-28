@@ -69,13 +69,13 @@ header{
     }
 
     .search input[type="search"]{
-        width:24rem;    
+        width:30vw;    
         padding:0.8rem;
         margin:1.2rem 1rem 0rem 0rem;
         background-image:url("images/search.gif");
-        background-position: 21.5rem;
+        background-position: 27vw;
         background-repeat: no-repeat;
-        background-size: 2rem;
+        background-size: 2vw;
         border:0.1rem black solid;
         border-radius:1.5rem;
     }
@@ -115,8 +115,20 @@ header{
         border:0.05rem white solid;
     }
 
+    .noti{
+        display: none;
+        font-size: 0.9rem;
+        width:fit-content;
+        position:absolute;
+        top:4.5rem;
+        right:2rem;
+        padding:1rem;
+        background-color:white;
+        border:0.1rem black solid;
+    }
+
     
-    .star:hover .wiis{
+    .star:hover .wiis,.bell:hover .noti{
         display: block;
         animation:fade-in 0.2s forwards ease-out; 
     }
