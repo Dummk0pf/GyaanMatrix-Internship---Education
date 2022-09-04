@@ -22,13 +22,13 @@ p{
 a{
     text-decoration: none;
     font-family: 'PT Mono', monospace;
-    color:white;
+    color:black;
 }
 
 header{
     height:5rem;
     display: flex;
-    background-color: black;
+    background-color: white;
 }
 
     .logo img{
@@ -49,12 +49,11 @@ header{
         height: fit-content;
         margin:1rem 0rem;
         padding:1rem;
-        border-radius:0.5rem;
         /* font-weight: 600; check this to see if it works out after finishing the project*/
     }
 
     .logo img:hover,.nbut1:hover,.nbut2:hover,.nbut3:hover{
-        animation: box-in 0.5s ease-in-out forwards;
+        animation: box-in 0.2s ease-in-out forwards;
     }
 
     @keyframes box-in{
@@ -62,8 +61,30 @@ header{
             box-shadow: 0rem 0rem 0.01rem rgb(224, 224, 224);
         }
         to{
-            box-shadow: 0rem 0rem 0.5rem rgb(224, 224, 224);
+            box-shadow: 0rem 0rem 0.5rem rgb(61, 61, 61);
         }
+    }
+
+    .drop-down{
+        display:none;
+        font-size: 0.9rem;
+        width:10vw;
+        height:fit-content;
+        position:absolute;
+        top:4.5rem;
+        left:10rem;
+        padding:1rem;
+        background-color:white;
+        border:0.1rem black solid;
+    }
+
+    .drop-down a{
+        display: inline-block;
+    }
+
+    .nbut1:hover .drop-down{
+        animation: fade-in 0.2s forwards ease-in;
+        display: block;
     }
 
     .search input[type="search"]{
@@ -72,18 +93,16 @@ header{
         margin:1.2rem 1rem 0rem 0rem;
         border:0.1rem black solid;
         border-radius:1.5rem;
-        filter:invert(1);
     }
 
     nav img{
         position:relative;
         width:1.5rem;
         margin:1.8rem 0.2rem;
-        filter:invert(0.8);
     }
 
     nav img:hover{
-        transition-duration:1s;
+        transition-duration:0.5s;
         scale:1.1;
     }
 
@@ -130,7 +149,7 @@ header{
     @keyframes fade-in{
         from {  
             opacity:0;
-            transform: scale(0.95); 
+            transform: scale(0.97); 
         }
         to { 
             opacity: 1;
@@ -144,6 +163,7 @@ header{
 }
 
     .herobox1{
+        width:fit-content;
         width:100%;
         background-color: blanchedalmond;
     }
@@ -153,7 +173,11 @@ header{
         font-size:3rem;
         font-weight:500;
         padding:1rem;
-        background-color: rgb(18, 69, 52);
+    }
+
+    .hdn p{
+        font-size:1rem;
+        width:10rem;
     }
 
 
