@@ -5,7 +5,6 @@ font-family: 'PT Mono', monospace; */
 html{
     background-color: whitesmoke;
     height:100%;
-    overflow-x:hidden;
 }
 
 body{
@@ -81,6 +80,17 @@ header{
         align-items: center;
     }
 
+    .dropb{
+        position:absolute;
+        top:4.5rem;
+        left:20.5rem;
+    }
+
+    .dropc{
+        padding:1rem;
+        background-color:whitesmoke;
+    }
+
     .text{
         padding:1rem;
     }
@@ -97,6 +107,10 @@ header{
 
     .dropa img:hover{
         box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.147);
+    }
+
+    .dropa img:hover .dropb{
+        display:block;
     }
 
     .nbut1:hover .drop-down{
@@ -257,7 +271,7 @@ header{
         height:23rem;
         width:100%;
         background-color: aliceblue;
-        margin-top:2rem;
+        margin-top:1rem;
     }
 
         .card{
@@ -269,9 +283,12 @@ header{
         }
 
     .more{
-        margin-left:92%;
-        padding:1rem;
-        background-color:white;
+        margin-left:93%;
+        padding:0.5rem;
+    }
+
+    .more:hover{
+        text-decoration:underline;
     }
 
 
