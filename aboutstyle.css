@@ -1,13 +1,10 @@
-/* font-family: 'IBM Plex Serif', serif;
-font-family: 'Lora', serif;
-font-family: 'PT Mono', monospace; */
-
 html{
     background-color: whitesmoke;
     height:100%;
 }
 
 body{
+    width:100%;
     height:100%;
 }
 
@@ -28,13 +25,13 @@ a{
 header{
     height:5rem;
     display: flex;
-    background-color: black;
+    background-color: white;
 }
 
     .logo img{
         width:8rem;
         margin:0.7rem 0.5rem 0rem 1rem;
-        border-radius:0.2rem;
+        border-radius:1rem;
         border:0.05rem rgba(119, 136, 153, 0.456) solid;
     }
 
@@ -52,70 +49,17 @@ header{
         /* font-weight: 600; check this to see if it works out after finishing the project*/
     }
 
-    .nbut1:hover,.nbut2:hover,.nbut3:hover{
+    .logo img:hover,.nbut1:hover,.nbut2:hover,.nbut3:hover{
         animation: box-in 0.2s ease-in-out forwards;
-    }
-
-    .aca,.abo,.con{
-        color:white;
     }
 
     @keyframes box-in{
         from{
-            box-shadow: 0rem 0rem 0.01rem rgb(61,61,61);
+            box-shadow: 0rem 0rem 0.01rem rgb(224, 224, 224);
         }
         to{
-            box-shadow: 0rem 0rem 0.5rem rgb(255, 255, 255);
+            box-shadow: 0rem 0rem 0.5rem rgb(61, 61, 61);
         }
-    }
-
-    .drop-down{
-        display:none;
-        min-width:10rem;
-        position:absolute;
-        top:4.2rem;
-        left:10.5rem;
-        background-color:white;
-        border:0.1rem black solid;
-    }
-
-    .dropa{
-        display: flex;
-        align-items: center;
-    }
-
-    .dropb{
-        display: none;
-        position:absolute;
-        top:4.2rem;
-        left:27.5rem;
-    }
-
-    .dropc{
-        padding:1rem;
-        background-color:white;
-    }
-
-    .text{
-        padding:1rem;
-    }
-
-    .text:hover,.dropc:hover{
-        text-decoration:underline;
-    }
-
-    .dropa img{
-        width:1rem;
-        padding:1rem;
-        margin:0.2rem;
-    }
-
-    .dropa img:hover{
-        box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.147);
-    }
-
-    .dropa img:hover .dropb{
-        display:block;
     }
 
     .nbut1:hover .drop-down{
@@ -135,7 +79,6 @@ header{
         position:relative;
         width:1.5rem;
         margin:1.8rem 0.2rem;
-        filter:invert(1);
     }
 
     .st:hover,.bo:hover,.be:hover,.ac:hover{
@@ -215,94 +158,3 @@ header{
             transform:scale(1);
         }
     }
-
-.container{
-    height:fit-content;
-    background-color: lightcyan;
-}
-
-    .herobox1{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        width:100%;
-        height:70%;
-        background-color:white;
-        color: black;
-    }
-
-        .hdn{
-            background-color:lightcoral;
-            width:fit-content;
-            font-size:3rem;
-            font-weight:500;
-            margin-left:2rem;
-            padding:1rem;
-        }
-
-        .hdn h1{
-            background-color:lightblue;
-            margin-bottom:5rem;
-            padding:1rem;
-        }
-
-        .hdn p{
-            background-color: azure;
-            margin:0.2rem;
-            padding:1rem;
-            font-size:1rem;
-            width:15rem;
-        }
-
-        .himg{
-            width:15rem;
-            height:12rem;
-            margin-right:2rem;
-            box-shadow:0rem 0rem 1rem rgba(0, 0, 0, 0.147);
-        }
-
-    .top{
-        width:fit-content;
-        font-size:2rem;
-        background-color:pink;
-        border:0.1rem solid white;
-        margin-left:2rem;
-        padding:1rem;
-    }    
-
-    .scrods{
-        display:flex;
-        justify-content: space-evenly;
-        flex-wrap:wrap;
-        height:23rem;
-        width:100%;
-        background-color: aliceblue;
-        margin-top:1rem;
-    }
-
-        .card{
-            width:22%;
-            background-color: antiquewhite;
-            margin:0.5rem;
-            border:0.1rem solid white;
-            box-shadow:0rem 0rem 1rem rgba(0, 0, 0, 0.31);
-        }
-
-    .more{
-        margin-left:93%;
-        padding:0.5rem;
-    }
-
-    .more:hover{
-        text-decoration:underline;
-    }
-
-
-
-
-
-
-footer{
-    height:40%;
-    background-color:lightskyblue;
-}
