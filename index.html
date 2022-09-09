@@ -24,12 +24,16 @@
                 <div class="drop-down">
                     <div class="dropa">
                         <a href="#" class="text">Lorem, ipsum dolor.</a>
-                        <a href="#" onclick="navdisplay()"><img src="images/angle-right-solid.svg" alt=""></a>
+                        <a href="#" onmouseenter="navdisplay(subdis1)" id="arrow"><img src="images/angle-right-solid.svg" alt=""></a>
+                    </div>
+                    <div class="dropa">
+                        <a href="#" class="text">Lorem, ipsum dolor.</a>
+                        <a href="#" onmouseenter="navdisplay(subdis2)" id="arrow"><img src="images/angle-right-solid.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="dropb" id="subdis">
+                <div class="dropb" onmouseleave="navexit(this)" id="subdis1">
                     <div class="dropc">
-                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                        <a href="#">1  Lorem ipsum dolor sit amet.</a>
                     </div>
                     <div class="dropc">
                         <a href="#">Lorem ipsum dolor sit amet.</a>
@@ -44,6 +48,24 @@
                         <a href="#">Lorem ipsum dolor sit amet.</a>
                     </div>
                 </div>
+                <div class="dropb" onmouseleave="navexit(this)" id="subdis2">
+                    <div class="dropc">
+                        <a href="#">2 Lorem ipsum dolor sit amet.</a>
+                    </div>
+                    <div class="dropc">
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                    </div>
+                    <div class="dropc">
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                    </div>
+                    <div class="dropc">
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                    </div>
+                    <div class="dropc">
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                    </div>
+                </div>
+                
             </div>
             <div class="nbut2"><a href="#">About</a></div>
             <div class="nbut3"><a href="#">Contact</a></div>

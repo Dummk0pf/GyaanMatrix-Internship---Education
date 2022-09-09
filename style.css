@@ -67,7 +67,7 @@ header{
 
     .drop-down{
         display:none;
-        width:fit-content;
+        min-width:10rem;
         position:absolute;
         top:4.2rem;
         left:10.5rem;
@@ -81,21 +81,22 @@ header{
     }
 
     .dropb{
+        display: none;
         position:absolute;
-        top:4.5rem;
-        left:20.5rem;
+        top:4.2rem;
+        left:27.5rem;
     }
 
     .dropc{
         padding:1rem;
-        background-color:whitesmoke;
+        background-color:white;
     }
 
     .text{
         padding:1rem;
     }
 
-    .dropa a:hover{
+    .text:hover,.dropc:hover{
         text-decoration:underline;
     }
 
